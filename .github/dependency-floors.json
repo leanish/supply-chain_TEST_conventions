@@ -1,0 +1,37 @@
+{
+  "floors": [
+    {
+      "ecosystem": "Maven",
+      "package": "org.codehaus.plexus:plexus-utils",
+      "version": "3.6.1",
+      "declaredIn": "build.gradle.kts",
+      "selector": [":checkstyle"],
+      "purpose": "security",
+      "advisories": ["GHSA-6fmv-xxpf-w3cw"],
+      "reason": "Security floor for Checkstyle dependencies",
+      "added": "2026-10-14"
+    },
+    {
+      "ecosystem": "Maven",
+      "package": "com.google.guava:guava",
+      "version": "33.7.2-jre",
+      "declaredIn": "build.gradle.kts",
+      "selector": [":annotationProcessor", ":checkstyle", ":testAnnotationProcessor"],
+      "purpose": "security",
+      "advisories": ["GHSA-xxph-c9ww-hj94"],
+      "reason": "Security floor for annotation processor and Checkstyle dependencies",
+      "added": "2026-10-14"
+    },
+    {
+      "ecosystem": "Maven",
+      "package": "org.apache.commons:commons-lang3",
+      "version": "3.18.0",
+      "declaredIn": "build.gradle.kts",
+      "selector": [":checkstyle"],
+      "purpose": "security",
+      "advisories": ["GHSA-j288-q9x7-2f5v"],
+      "reason": "Security floor for Checkstyle dependencies",
+      "added": "2026-10-14"
+    }
+  ]
+}
