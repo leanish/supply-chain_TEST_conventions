@@ -4,7 +4,7 @@ pluginManagement {
         mavenCentral()
     }
     plugins {
-        id("io.github.leanish.java-conventions") version "0.3.1"
+        id("io.github.leanish.java-conventions") version "0.6.2"
     }
 }
 
